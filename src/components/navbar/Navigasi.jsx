@@ -19,10 +19,10 @@ const Navigasi = () => {
     }
 
   return (
-    <div className='flex fixed w-[100%] flex-col p-3 md:px-8 md:flex-row'>
+    <div className='flex w-[100%] flex-col p-3 md:px-8 md:flex-row z-10'>
         <div className='flex items-center justify-between md:items-start md:h-fit'>
             <Link to="/">
-                <img src={logo} alt="Logo D'nurs" className='w-[25%] md:w-[35%]'/>
+                <img src={logo} alt="Logo D'nurs" className='w-[25%] md:w-[35%] '/>
             </Link>
             <div className='text-3xl cursor-pointer md:hidden' onClick={hamburgerMenu}>
                 <RxHamburgerMenu />

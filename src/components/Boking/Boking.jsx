@@ -1,14 +1,28 @@
- import React from 'react'
+ import React from 'react';
+ import TestBackground from './../../assets/imgae/test2.png';
 //  Mobile & Tab Belom responsive
 
 const Boking = () => {
+
+    const disabledDate = () =>{
+        let date = new Date();
+        let day = date.getDate();
+        let mounth = date.getMonth() + 1;
+        let year = date.getFullYear();
+        if(day < 10){
+            day = '0'+day
+        }if(mounth < 10){
+            mounth = '0'+mounth
+        }
+        return year+'-'+mounth+'-'+day
+    }
+
   return (
     <div className=''>
     <h1 className='text-center text-3xl font-semibold'>Kontak kami</h1>
     <div className='grid md:grid-cols-2 px-4 md:px-10 lg:px-28 p-3'>
-        <div className='bg-[#e3c044] rounded-tl-xl rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl flex items-center justify-center'>
-            <form action="" className=' flex flex-col gap-2 w-[100%] lg:w-[80%] p-8'>
-                {/* <p className='text-center'>Silahkan isi form berikut untuk melakukan pelayanan kami</p> */}
+        <div className='bg-[#e3c044] rounded-tl-xl rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl flex items-center justify-center relative'>
+            <form action="" className=' flex flex-col gap-2 w-[100%] lg:w-[80%] p-8 z-10'>
                 <div className=''>
                     <label htmlFor="">Nama</label>
                     <input type="text" className='w-full focus:outline-none rounded-lg p-1'/>
@@ -16,7 +30,7 @@ const Boking = () => {
                 <div className='grid grid-cols-2 gap-3'>
                     <div className=''>
                         <label htmlFor="">tanggal</label>
-                        <input type="date" className='w-full focus:outline-none rounded-lg p-1'/>
+                        <input type="date" min={disabledDate()} className='w-full focus:outline-none rounded-lg p-1'/>
                     </div>
                     <div className=''>
                         <label htmlFor="">Jam</label>
@@ -35,6 +49,10 @@ const Boking = () => {
                     <button className='bg-[#c48c1c] py-2 rounded-xl text-white w-[35%] hover:bg-[#eca71ce0] transition duration-300'>Send</button>
                 </div>
             </form>
+            <div className='absolute bottom-0 w-full h-full opacity-80'>
+            <div className='w-[100%] h-[100%] bg-35% md:bg-40% lg:bg-30% bg-bottom bg-repeat-x' style={{backgroundImage: `url('${TestBackground}')`}}>
+            </div>
+            </div>
         </div>
         <div className='rounded-bl-xl rounded-br-xl overflow-hidden md:rounded-bl-none md:rounded-tr-xl'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.132309425793!2d106.91788251404431!3d-6.246289662898825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698da7ea47826b%3A0xb7a28872ab769fd3!2sD&#39;Nurs!5e0!3m2!1sid!2sid!4v1676955312868!5m2!1sid!2sid" width="100%" height="390" style={{border:0}} loading="lazy" ></iframe>

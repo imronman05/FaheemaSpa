@@ -4,6 +4,6 @@
 
 @layer components{
     .toggle {
-        @apply absolute top-0 h-screen w-[80%] text-right px-4 py-4 flex flex-col bg-[#cea11b] -right-full transition-all duration-300  md:bg-transparent md:h-fit md:static md:py-1 md:items-end 
+        @apply absolute top-0 h-screen w-[70%] text-right px-4 py-4 flex flex-col bg-[#a88f3f] -right-full transition-all duration-300  md:bg-transparent md:h-fit md:static md:py-1 md:items-end 
     }
 }

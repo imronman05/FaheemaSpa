@@ -27,7 +27,7 @@ const Info = () => {
     <div className=' min-h-[35vh] max-h-[70vh] px-4 pt-2 flex flex-col gap-9 md:min-h-[40vh] md:max-h-[80vh] md:gap-12'>
         <div>
             <div className='relative flex justify-center'>
-                <div className='absolute min-w-[45%] w-[35%] -top-3 md:min-w-[20%] md:max-w-[40%] md:w-[28%] lg:min-w-[5%] lg:w-[17%]'>
+                <div className='absolute min-w-[45%] w-[35%] -top-3 md:min-w-[20%] md:max-w-[40%] md:w-[28%] lg:min-w-[15%] lg:max-w-[15%]'>
                     <img src={flower} alt='gambar flower' className='w-[100%] opacity-50'/>
                 </div>
                 <div className='z-10 flex flex-col items-center justify-center text-center mt-5 gap-1 md:w-[60%] md:mt-8 lg:w-[45%] lg:mt-12'>

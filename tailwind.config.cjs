@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     backgroundPosition: {
+      'bottom': 'bottom',
       'right-top': 'top right -25em',
       'lg': 'top right -8em'
     },
@@ -16,6 +17,9 @@ module.exports = {
       'auto': 'auto',
       'cover': 'cover',
       'contain': 'contain',
+      '30%' : '30%',
+      '35%': '35%',
+      '40%': '40%',
       '110%': '110%'
     }
   },
