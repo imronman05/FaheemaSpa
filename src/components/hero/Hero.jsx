@@ -4,7 +4,7 @@ import background from './../../assets/imgae/bg.svg'
 
 const Hero = () => {
   return (
-    <div>
+    <div id='hero'>
       <div style={{backgroundImage: `url('${background}')`}} className='bg-cover bg-center bg-no-repeat min-h-[80vh] h-[80vh] md:bg-right-top lg:h-[100vh] lg:bg-lg'>
         <div className='h-[90%] flex flex-col justify-center px-7 gap-2 md:px-12 md:w-[80%] lg:w-[55%] lg:mx-20'>
           <div className='flex justify-center lg:pr-16'>

@@ -7,7 +7,7 @@ import "swiper/css";
 import 'swiper/css/virtual';
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
-import { Autoplay, Virtual, FreeMode} from "swiper";
+import { Autoplay, Virtual} from "swiper";
 
 const Location = () => {
   return (
@@ -21,13 +21,12 @@ const Location = () => {
         </div>
         <Swiper
         slidesPerView={1}
-        freeMode={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
-        modules={[Autoplay,Virtual,FreeMode]}
+        modules={[Autoplay,Virtual]}
         className='mySwiper h-full w-full overflow-hidden relative cursor-pointer lg:h-[24rem] group'
         >
           <SwiperSlide>

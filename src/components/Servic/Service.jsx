@@ -23,7 +23,7 @@ const Service = () => {
     ]
 
   return (
-    <div className='flex flex-col items-center px-4 gap-3 md:px-10 md:gap-5 lg:gap-7'>
+    <div className='flex flex-col items-center px-4 gap-3 md:px-10 md:gap-5 lg:gap-7' id='service'>
         <h1 className='text-2xl font-semibold md:text-4xl lg:text-3xl'>Service</h1>
         <div className='flex gap-5 text-center'>
             {servie.map((value, index) =>{

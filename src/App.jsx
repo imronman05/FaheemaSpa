@@ -14,6 +14,12 @@ import Music from "./assets/music/musicSpa.mp3"
 // import MusicSpa from "./components/MusicSpa/MusicSpa";
 import { MdMusicNote, MdMusicOff } from 'react-icons/md';
 
+// Navbar belum sempurna === DONE
+// Form Submit 
+// LINK scroll === DONE
+// React Router DOM 
+// Music Belum Sempurna
+
 
 function App() {
   const [iconMusic,setIconMusic] = useState(false)

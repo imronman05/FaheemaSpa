@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import {Link as LinkScroll} from 'react-scroll/modules'
 import logo from '../../assets/imgae/logo.png'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { GrClose } from 'react-icons/gr';
@@ -19,11 +20,11 @@ const Navigasi = () => {
     }
 
   return (
-    <div className='flex w-[100%] flex-col p-3 md:px-8 md:flex-row z-10'>
+    <div className='flex w-[100%] justify-between items-center flex-col p-3 md:px-8 md:flex-row z-10'>
         <div className='flex items-center justify-between md:items-start md:h-fit'>
-            <Link to="/">
+            <LinkScroll to='hero' smooth={true} offset={0} duration={500} className='cursor-pointer'>
                 <img src={logo} alt="Logo D'nurs" className='w-[25%] md:w-[35%] '/>
-            </Link>
+            </LinkScroll>
             <div className='text-3xl cursor-pointer md:hidden' onClick={hamburgerMenu}>
                 <RxHamburgerMenu />
             </div>
@@ -34,12 +35,12 @@ const Navigasi = () => {
                     <GrClose />
                 </div>
             </div>
-            <div>
+            <div className=''>
                 <ul className='flex flex-col gap-10 text-white/40 font-semibold md:flex-row text-[90%] md:text-lg lg:text-base'>
-                    <Link className='hover:text-[#ffcd39] active:text-[#ffcd39] transition duration-300'>HOME</Link>
-                    <Link className='hover:text-[#ffcd39] active:text-[#ffcd39] transition duration-300'>SERVICE</Link>
-                    <Link className='hover:text-[#ffcd39] active:text-[#ffcd39] transition duration-300'>TREATMENT</Link>
-                    <Link className='hover:text-[#ffcd39] active:text-[#ffcd39] transition duration-300'>BOOKING</Link>
+                    <LinkScroll activeClass='text-[#ffcd39]' spy={true} to='hero' smooth={true} offset={0} duration={500} className='hover:text-[#ffcd39]  transition duration-300 cursor-pointer'>HOME</LinkScroll>
+                    <LinkScroll activeClass='text-[#ffcd39]' spy={true} to='service' smooth={true} offset={-190} duration={500} className='hover:text-[#ffcd39] transition duration-300 cursor-pointer'>SERVICE</LinkScroll>
+                    <LinkScroll activeClass='text-[#ffcd39]' spy={true} to='treatment' smooth={true} offset={-190} duration={500} className='hover:text-[#ffcd39] transition duration-300 cursor-pointer'>TREATMENT</LinkScroll>
+                    <LinkScroll activeClass='text-[#ffcd39]' spy={true} to='booking' smooth={true} offset={-190} duration={500} className='hover:text-[#ffcd39] transition duration-300 cursor-pointer'>BOOKING</LinkScroll>
                 </ul>
             </div>
         </div>

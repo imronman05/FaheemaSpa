@@ -12,7 +12,7 @@ const Treatments = () => {
     const [data] =  useState(DataTreatments)
 
   return (
-    <div className='px-0'>
+    <div className='px-0' id='treatment'>
       <h1 className='text-center mb-5 text-2xl font-semibold md:mb-7 md:text-4xl lg:text-3xl lg:mb-4 '>Treatments</h1>
         <Swiper
           slidesPerView={3}

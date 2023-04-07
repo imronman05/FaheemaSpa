@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='text-center py-2 border-t-2 border-slate-600/10 text-black/70'>
-            <p>Copyright &copy;: 2023 <a href="https://github.com/imronman05">ImronMan05</a></p>
+            <p>Copyright &copy; 2023 <a href="https://github.com/imronman05" target='_blank'>ImronMan05</a></p>
         </div>
     </div>
   )
