@@ -32,7 +32,7 @@ function App() {
 
   const musicPlay = () =>{
     const audio = musicRef.current
-    audio.volume = 100
+    audio.volume = 1
 
     if(!iconMusic){
       setIconMusic(true)
