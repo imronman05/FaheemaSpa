@@ -11,14 +11,9 @@ import Location from "./components/Location/Location";
 import Boking from "./components/Boking/Boking";
 import Footer from "./components/footer/Footer";
 import Music from "./assets/music/musicSpa.mp3"
-// import MusicSpa from "./components/MusicSpa/MusicSpa";
 import { MdMusicNote, MdMusicOff } from 'react-icons/md';
 
-// Navbar belum sempurna === DONE
-// Form Submit 
-// LINK scroll === DONE
 // React Router DOM 
-// Music Belum Sempurna
 
 
 function App() {
@@ -37,7 +32,7 @@ function App() {
 
   const musicPlay = () =>{
     const audio = musicRef.current
-    audio.volume = 0.5
+    audio.volume = 100
 
     if(!iconMusic){
       setIconMusic(true)
@@ -49,7 +44,7 @@ function App() {
   } 
   return (
     <Router className=''>
-      <div className="fixed right-3 top-28 cursor-pointer z-30" id="PlayMusic" onClick={musicPlay}>
+      <div className="fixed right-0 top-28 cursor-pointer z-30" id="PlayMusic" onClick={musicPlay}>
         <div className='text-3xl bg-black/30 rounded-full p-2 cursor-pointer text-white/70'>
           <audio ref={musicRef} src={MusicSpa} loop={true} />
           {iconMusic ? 
@@ -65,7 +60,7 @@ function App() {
       </div>
         <Hero />
     </header>
-    <main className="relative mb-10">
+    <main className="relative mb-10 -z-10">
       <Info />
       <Border />
       <Service />

@@ -1,7 +1,5 @@
  import React, { useState } from 'react';
- import {Link} from 'react-router-dom'
  import TestBackground from './../../assets/imgae/test2.png';
-//  Mobile & Tab Belom responsive
 
 const Boking = () => {
     const [booking,setBooking] = useState({
