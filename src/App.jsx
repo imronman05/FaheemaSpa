@@ -26,7 +26,7 @@ function App() {
     if(window.pageYOffset > 0){
       setNavbar('fixed w-full bg-[#a88f3f] z-20 transition-all duration-300')
     }else{
-      setNavbar('fixed w-full transition-all duration-300')
+      setNavbar('fixed w-full transition-all z-20 duration-300')
     }
   }
 
