@@ -19,7 +19,7 @@ import { MdMusicNote, MdMusicOff } from 'react-icons/md';
 function App() {
   const [iconMusic,setIconMusic] = useState(false)
   const [MusicSpa] = useState(Music)
-  const [navbar, setNavbar] = useState('fixed w-full')
+  const [navbar, setNavbar] = useState('fixed w-full z-20')
   const musicRef = useRef(new Audio(Music))
 
   window.onscroll = () =>{
@@ -60,7 +60,7 @@ function App() {
       </div>
         <Hero />
     </header>
-    <main className="relative mb-10 -z-10">
+    <main className="relative mb-10 ">
       <Info />
       <Border />
       <Service />
